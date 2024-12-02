@@ -5,7 +5,7 @@
       "title": "Aula F75",
       "slug": "aula-f75",
       "price": 300,
-      "image": "f75_00.jpg",
+      "image": "/f75_00.jpg",
       "description": "Aula F75 Mechanical Keyboard",
       "featured": true
     },
@@ -14,25 +14,25 @@
       "title": "Aula F2058",
       "slug": "aula-f2058",
       "price": 200,
-      "image": "f75_01.jpg",
+      "image": "/f75_01.jpg",
       "description": "Aula F2058 Mechanical Keyboard",
       "featured": true
     },
     {
       "id": 3,
-      "title": "Aula F2028",
+      "title": "Aula F20asdfas28",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_02.jpg",
+      "image": "/f75_02.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": false
     },
     {
       "id": 4,
-      "title": "Aula F2028",
+      "title": "Aula F2241028",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_03.jpg",
+      "image": "/f75_03.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": true
     },
@@ -41,7 +41,7 @@
       "title": "Aula F2028",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_01.jpg",
+      "image": "/f75_01.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": false
     },
@@ -50,7 +50,7 @@
       "title": "Aula F2028",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_01.jpg",
+      "image": "/f75_01.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": false
     },
@@ -59,7 +59,7 @@
       "title": "Aula F2028",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_01.jpg",
+      "image": "/f75_01.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": false
     },
@@ -68,7 +68,7 @@
       "title": "Aula F2028",
       "slug": "aula-f2028",
       "price": 150,
-      "image": "f75_01.jpg",
+      "image": "/f75_01.jpg",
       "description": "Aula F2028 Mechanical Keyboard",
       "featured": true
     }
