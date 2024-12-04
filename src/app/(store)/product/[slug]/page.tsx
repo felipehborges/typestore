@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/products'
 import { Heart, ShoppingCart } from 'lucide-react'
+import { Metadata } from 'next'
 import Image from 'next/image'
 
 interface ProductProps {
@@ -18,6 +19,26 @@ async function getProduct(slug: string): Promise<Product> {
   })
   const product = await response.json()
   return product
+}
+
+export async function generateMetadata({
+  params
+}: ProductProps): Promise<Metadata> {
+  const product = await getProduct(params.slug)
+
+  return {
+    title: product.title
+  }
+}
+
+// This function below is used to generate the static paths for the page.
+// It's used to tell Next.js which pages should be generated statically (cache).
+export async function generateStaticParams() {
+  const response = await api('/products/featured')
+  const products: Product[] = await response.json()
+
+  // return [{ slug: '' }]
+  return products.map((product) => ({ slug: product.slug }))
 }
 
 export default async function ProductPage({ params }: ProductProps) {
