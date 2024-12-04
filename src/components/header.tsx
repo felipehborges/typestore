@@ -1,4 +1,4 @@
-import { Search, ShoppingBag } from 'lucide-react'
+import { ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Input } from './ui/input'
@@ -12,7 +12,10 @@ export default function Header() {
           <Image alt="" src="/ts_logo.png" width={100} height={100} />
         </Link>
 
-        <Input placeholder="Buscar produtos..." />
+        <Input
+          className="h-10 w-80 rounded-lg"
+          placeholder="Buscar produtos..."
+        />
 
         {/* <form className="flex w-[320px] items-center gap-3 rounded-full bg-background px-5 py-3 ring ring-muted-foreground">
           <Search className="h-5 w-5 text-muted-foreground" />
