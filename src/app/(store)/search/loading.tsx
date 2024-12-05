@@ -5,7 +5,6 @@ import { useSearchParams } from 'next/navigation'
 
 export default function SearchLoading() {
   const searchParams = useSearchParams()
-
   const query = searchParams.get('q')
 
   return (

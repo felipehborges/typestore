@@ -1,6 +1,6 @@
-import { ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { CartWidget } from './cart-widget'
 import { Input } from './ui/input'
 import { ModeToggle } from './ui/mode-toggle'
 
@@ -29,10 +29,7 @@ export default function Header() {
       <div className="flex items-center gap-4">
         <ModeToggle />
 
-        <div className="flex items-center gap-2">
-          <ShoppingBag className="h-4 w-4" />
-          <span className="text-sm">Cart (0)</span>
-        </div>
+        <CartWidget />
 
         <div className="h-4 w-px bg-muted" />
 

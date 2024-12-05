@@ -1,3 +1,4 @@
+import { AddToCartButton } from '@/components/add-to-cart-button'
 import { Button } from '@/components/ui/button'
 import { api } from '@/data/api'
 import { Product } from '@/data/types/products'
@@ -118,14 +119,12 @@ export default async function ProductPage({ params }: ProductProps) {
         </div>
 
         <div className="flex flex-col space-y-2">
-          <Button type="button" size="lg">
-            <ShoppingCart />
-            Adicionar ao carrinho
-          </Button>
-          <Button type="button" size="lg" variant="outline">
+          <AddToCartButton productId={product.id} />
+
+          {/* <Button type="button" size="lg" variant="outline">
             <Heart />
             Adicionar aos favoritos
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
