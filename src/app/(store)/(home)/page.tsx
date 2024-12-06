@@ -4,22 +4,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 async function getFeaturedProducts(): Promise<Product[]> {
-  // const response = await api('/products/featured', {
-  //   cache: 'force-cache'
-  //   force-cache: The browser loads the resource from the server and stores it in the cache (default).
-  //   cache: 'no-store'
-  //   no-store: The browser loads the resource from the server without storing it in the cache.
-  //   next: {
-  //     revalidate: 60 * 60
-  //   next. revalidate: 60 * 60: The browser loads the resource from the server and stores it in the cache.
-  //   After 60 minutes, the browser will revalidate the resource with the server.
+  const response = await api('/products/featured', {
+    next: { revalidate: 60 * 60 }
+  })
 
-  //   To a YouTube type of website, it's interesting to use the no-store option, because the content is always changing.
-  //   Every F5, the content is different.
-  //   }
-  // })
-  const response = await api('/products/featured')
   const products = await response.json()
+
   return products
 }
 
